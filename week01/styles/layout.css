@@ -9,20 +9,23 @@ header {
     background: lightpink;
 }
 nav {
-    display: flex;
-    background: lightcoral;
-    
+    margin: 0 auto 1rem;
 }
-.navigation {
+.flex-container {
     display: flex;
-    align-content: center space-evenly;
+    justify-content: space-evenly;
+    height:50px;
+    text-align: center;
+    font-size: 2em;
+    background: lightcoral;
+ 
 }
 main {
     grid-column: 1/1;
     background: lightyellow;
 }
 aside {
-    grid-column: 3/4;
+    grid-column: 30%;
     background: rgb(234, 159, 218);
 }
 footer {
