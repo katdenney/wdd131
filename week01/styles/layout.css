@@ -1,6 +1,6 @@
 body {
     display: grid;
-    height:70vh;
+    height:100vh;
     grid-template:auto 1fr auto / 1fr auto;
 }
 header {
@@ -21,11 +21,12 @@ nav {
  
 }
 main {
-    grid-column: 1/1;
+    grid-column: 1/2;
     background: lightyellow;
 }
 aside {
-    grid-column: 30%;
+    grid-column: 3/4;
+    width: 25rem;
     background: rgb(234, 159, 218);
 }
 footer {
