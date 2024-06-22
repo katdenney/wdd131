@@ -36,15 +36,23 @@
             <li><a href="https://www.w3schools.com/js/default.asp">w3schools javascript</a></li>
             <li><a href="https://coolors.co/">coolors color pallete generator</a></li>
             <li><a href="https://www.w3schools.com/css/css_font_google.asp">w3schools google fonts</a></li>
+            <li><a href="https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html">adding javascript to HTML</a></li>
         </section>         
     </main>
     <footer>
         <p>
-            <span id="2024"></span>
-            Katlin Denney, Utah, United States
+            <span id="currentYear"></span>
+            <span id="lastModified">Katlin Denney, Utah, United States</span>   
         </p>
-        <p>last modified in java script</p>
     </footer>
+    <script>
+        var currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').innerHTML = "&copy;" + currentYear;
+
+        var lastMod = new Date(document.lastModified);
+        var formattedDate = lastMod.toLocaleString();
+        document.getElementById('lastModified').textContent = "Last Modified: " + formattedDate;
+    </script>
     
 </body>
 </html>
