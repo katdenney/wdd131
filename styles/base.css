@@ -1,3 +1,43 @@
-img{
+nav {
+    max-width:800px;
+    background-color: rgb(152, 63, 78);
+}
+.nav .flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul {
+    list-style-type:none;
+    padding: 0;
+}
+nav a {
+    display: block;
+    color:pink;
+    text-align:center;
+    padding:1rem;
+    text-decoration:none;
+}
+nav a:hover {
+    color: hotpink;
+    border:1px solid black;
+}
+.active {
+    color: lightcoral;
+}
+body {
+    display: grid;
+    grid-template: auto 1fr/ auto 1fr;
+}
+img {
     width:300px;
+}
+/* for large veiw*/
+@media(min-width: 640px) {
+    nav ul {
+        display:flex;
+        justify-content: space-around;
+    }
+    nav ul li {
+        flex: 1 1 100%
+    }
 }
