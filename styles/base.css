@@ -37,10 +37,10 @@ body{
     padding:15px;
     text-decoration:none;
 }
-.active {
-    color: lightcoral;
+.flex-container a:hover {
+    color:black;
+    font-size: x-large;
 }
-
 main {
     grid-row: 2;
     font-family: "Roboto", sans-serif;
@@ -53,6 +53,11 @@ main {
     padding: 30px;
     border-color: black;
     font-size: 18px;
+}
+.card a:hover {
+    font-size: larger;
+    color:black;
+
 }
 .card h2 {
     font-size: 14px;
