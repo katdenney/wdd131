@@ -8,7 +8,7 @@ header {
     display: block;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     grid-row: 1;
     background-color: palevioletred;
@@ -16,7 +16,7 @@ header {
 nav {
     background-color: lightsalmon;
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     font-size: 18px;
 }
@@ -44,7 +44,7 @@ body{
 main {
     grid-row: 2;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 .card {
@@ -64,10 +64,10 @@ main {
 }
 footer {
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     grid-row: 3;
-    font:12px;
+    font-size:12px;
     background-color: lightsalmon;
     padding:15px;
 }
