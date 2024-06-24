@@ -75,7 +75,7 @@ img {
     width:300px;
     border-radius: 50px;
 }
-/* for large veiw*/
+/* for large veiw
 @media(min-width: 640px) {
     nav ul {
         display:flex;
@@ -100,4 +100,4 @@ img {
         text-align: center;
     }
     
-}
+}*/
