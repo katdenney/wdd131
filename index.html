@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,7 +33,7 @@
             <img src="images/family23.jpg" alt="about me image">
         </section> 
         <section class="card">
-            <h1>Web Dev Resources</h1>
+            <h1>Resources</h1>
             <ul>
                 <li><a href="https://katdenney.github.io/wdd131/">My Github WDD131</a></li>
                 <li><a href="https://byui-cse.github.io/wdd131-ww-course/resources/dev-standards.html">BYU-I WDD131 Home</a></li>
@@ -70,14 +71,5 @@
             <span id="lastModified">Katlin Denney, Utah, United States</span>   
         </p>
     </footer>
-    <script>
-        var currentYear = new Date().getFullYear();
-        document.getElementById('currentYear').innerHTML = "&copy;" + currentYear;
-
-        var lastMod = new Date(document.lastModified);
-        var formattedDate = lastMod.toLocaleString();
-        document.getElementById('lastModified').textContent = "Last Modified: " + formattedDate;
-    </script>
-    
 </body>
 </html>
