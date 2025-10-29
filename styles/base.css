@@ -6,14 +6,14 @@ body {
 header {
     grid-column: 1/4;
     margin-bottom: 0;
-    background: rgb(240, 240, 145);
+    background: 5e0820;
 }
 .navigation {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin:0;
-    background: rgb(240, 183, 229);
+    background: rgb(40, 54, 24);
 }
 .navigation a {
     display: block;
@@ -27,11 +27,11 @@ header {
 
 main {
     grid-column: 1/2;
-    background: rgb(207, 244, 212);
+    background: rgb(188, 108, 37);
 }
 aside {
     grid-column: 2/4;
-    background: rgb(191, 190, 241);
+    background: rgb(96, 108, 56);
 }
 footer {
     grid-column: 1/4;
