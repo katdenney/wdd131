@@ -60,14 +60,14 @@ section {
     border-radius: 10px;
 }
 
-.card1{
+#card1{
     grid-column: 1/2;
     background: rgb(221,161,94);
     display: grid;
     
     
 }
-.card1 img{
+#card1 img{
     padding:20px;
     background:rgb(96, 108, 56);
     border-radius: 10px;
@@ -75,7 +75,7 @@ section {
     border-style: solid;
     place-items: start;
 }
-.card2 img{
+#card2 img{
     padding:20px;
     background:rgb(96, 108, 56);
     border-radius: 10px;
@@ -83,16 +83,16 @@ section {
     border-style: solid;
 }
 
-.card2{
+#card2{
     grid-column: 2/3;
     background: rgb(221,161,94);
     display: grid;
     place-items: center;
 }
-.card2 a{
+#card2 a{
     color: black;
 }
-.card2 a:visited{
+#card2 a:visited{
     color: rgb(40, 54, 24)
 }
 footer {
