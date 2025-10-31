@@ -11,6 +11,7 @@ header {
     background: rgb(96, 108, 56);
     color: white;
     font-weight: 300;
+    padding-top: 20px;
     
 }
 span {
@@ -88,6 +89,7 @@ section {
     background: rgb(221,161,94);
     display: grid;
     place-items: center;
+    font-weight: 600;
 }
 #card2 a{
     color: black;
@@ -101,4 +103,12 @@ footer {
     color: white;
     display: grid;
     place-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+footer p {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    }
