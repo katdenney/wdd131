@@ -6,7 +6,7 @@ body {
     min-width: 600px;
 }
 header {
-    grid-column: 1/4;
+    grid-column: 1/4;/*this refering to body grid*/
     margin-bottom: 0;
     background: rgb(96, 108, 56);
     color: white;
@@ -15,7 +15,7 @@ header {
     
 }
 span {
-    display: grid;
+    display: grid; /*this is its own grid just centering */
     place-items: center;
     
 }
@@ -40,7 +40,7 @@ span {
     background: rgb(96, 108, 56);
 }
 main {
-    grid-column: 1/4;
+    grid-column: 1/4;/*this refering to the body grid*/
     background: rgb(188, 108, 37);
     display: grid;
     grid-template: 1fr/ 1fr;
@@ -50,23 +50,24 @@ main {
     
 } /*trying to fix the center of main*/
 main h1 {
-    max-height: fit-content;
+    max-height: fit-content; /*come back this might work for the card2 */
     padding: 0%;
     margin: 20px;
 }
 section {
-    
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
+    max-height: fit-content;
 }
-
+img{
+    width: 200px;
+    height: auto;
+}
 #card1{
-    grid-column: 1/2;
+    grid-column: 1/2;/*this is refering to grid in main*/
     background: rgb(221,161,94);
-    display: grid;
-    
-    
+    display: grid;  
 }
 #card1 img{
     padding:20px;
@@ -74,7 +75,14 @@ section {
     border-radius: 10px;
     border:rgb(40, 54, 24); 
     border-style: solid;
-    place-items: start;
+    place-items: start; /*this is refering to card 1 grid */
+}
+#card2{
+    grid-column: 2/3;/*this is refering to grid in main */
+    background: rgb(221,161,94);
+    display: grid;
+    place-items: center;
+    font-weight: 600;
 }
 #card2 img{
     padding:20px;
@@ -83,32 +91,20 @@ section {
     border:rgb(40, 54, 24); 
     border-style: solid;
 }
-
-#card2{
-    grid-column: 2/3;
-    background: rgb(221,161,94);
-    display: grid;
-    place-items: center;
-    font-weight: 600;
-}
 #card2 a{
     color: black;
+    max-height: fit-content;
 }
 #card2 a:visited{
     color: rgb(40, 54, 24)
 }
 footer {
-    grid-column: 1/4;
+    grid-column: 1/4; /*this is refering to grid in body*/
     background: rgb(96, 108, 56);
     color: white;
-    display: grid;
-    place-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 footer p {
     margin: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     }
