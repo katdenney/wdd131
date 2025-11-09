@@ -9,6 +9,7 @@
     .navigation {
         display: flex;
         flex-wrap: wrap;
+        
     }
     .gallery {
     display: grid;
