@@ -1,50 +1,38 @@
 body {
-    min-width: 320px;
-    
+    min-width: 320px;/*mobile first iphone size?*/ 
+    font-family: 'Vend Sans', sans-serif;
 }
 header {
-    margin: 0 auto;
+    background: rgb(40, 54, 24);
+    color: white;
+}
+header span{
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 #menu-toggle{
     display: block;
     font-size: 2rem;
     margin: 0 auto;
+    place-items: center;
 }
 nav{
-    display: flex;/*did this fix my problem?*/
+    display: flex;/*did this becuase the assignment expects flex in nav.. come back after finding a better way becuase this is immediatly overriden*/
 }
-.navigation {
+.navigation { /*nav display off for mobile first*/
     display: none;
-    list-style: none;
-    margin:0 auto;
-    background: rgb(40, 54, 24);
-    color: white;
-}
-.navigation a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-}
-.navigation li {
-    flex:1 1 auto;
-    padding: 10px;
-}
-.navigation a:hover {
-    background: rgb(96, 108, 56);
+    list-style: none;   
 }
 main {
     background: rgb(188, 108, 37);
     margin: 0 auto;
     max-height: fit-content;
-    max-width: 800px;
+    max-width: 800px;/*this is simply creating white space in the large veiw*/
 } 
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: clamp(1rem, 3vw, 2rem);
-    row-gap: clamp(1rem, 3vw, 2rem);
-    padding: 1rem;
+    place-items: center;
 }
 img{
     width: 200px;
