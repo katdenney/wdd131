@@ -1,33 +1,48 @@
+
 body {
-    min-width: 320px;/*mobile first iphone size?*/ 
+    margin: 0; 
     font-family: 'Vend Sans', sans-serif;
 }
 header {
     background: rgb(40, 54, 24);
     color: white;
 }
-header span{
+#page-title {
     font-weight: 600;
-    font-size: 1.5rem;
 }
-#menu-toggle{
+/*nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+#menu-toggle {
     display: block;
     font-size: 2rem;
-    margin: 0 auto;
-    place-items: center;
+    background: none;
+    border: none;
+    padding:0.25rem 0.5rem;
+    cursor: pointer;
+    color: white;
 }
-nav{
-    display: flex;/*did this becuase the assignment expects flex in nav.. come back after finding a better way becuase this is immediatly overriden*/
-}
-.navigation { /*nav display off for mobile first*/
+.navigation { /*nav display off for default mobile first*/
     display: none;
+    flex-direction: column;
     list-style: none;   
+    margin:0;
+    padding: 0;
 }
+/*hamburger toggling open*/
+.navigation.open {
+    display: flex;
+}
+
 main {
     background: rgb(188, 108, 37);
     margin: 0 auto;
     max-height: fit-content;
-    max-width: 800px;/*this is simply creating white space in the large veiw*/
+    max-width: 90%;/*this is simply creating white space in the large veiw*/
 } 
 .gallery {
     display: grid;
