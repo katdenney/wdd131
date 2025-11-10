@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (menuToggle && menu) {
         menuToggle.addEventListener("click", () => {
             menu.classList.toggle("open");
+            menuToggle.textContent =menu.classList.contains("open") ? "x" : "☰";
         });
     } else {
         console.error("Menu error");
