@@ -1,5 +1,6 @@
 body {
 	font-family: Roboto, helvetica, sans-serif;
+	margin: 1rem;
 }
 
 header,
@@ -16,11 +17,13 @@ header  div{
 
 h1 {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	margin: 1rem 0;
 }
 
 main {
 	display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 200px;
+	grid-gap:1.5rem;
 }
 
 h2 {
@@ -28,7 +31,12 @@ h2 {
 	text-align: start;
     grid-column: 1/3;
 }
-
+section {
+	padding:1rem;
+}
+h3{
+	margin-bottom: 0.5rem;
+}
 article p {
 	text-align: justify;
 }
