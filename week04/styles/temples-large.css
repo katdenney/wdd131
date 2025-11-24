@@ -22,6 +22,6 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: clamp(1rem, 3vw, 2rem); /*dynamically adjust*/
     row-gap: clamp(1rem, 3vw, 2rem); /*dynamically adjust*/
-    padding: 3 rem;
+    padding: 3rem;
     }
 }
