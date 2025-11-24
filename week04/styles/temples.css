@@ -55,10 +55,19 @@ main {
     max-height: fit-content;
     max-width: 90%;/*this is simply creating white space in the large veiw*/
 } 
-.gallery {
+#templeContainer {
     display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+.temple-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
 }
 img{
     width: 200px;

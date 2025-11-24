@@ -56,28 +56,44 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   {
-    templeName: "Mexico City Mexico",
-    location: "Mexico City, Mexico",
-    dedicated: "1983, December, 2",
-    area: 116642,
+    templeName: "Nashville Tennessee",
+    location: "Franklin, Tennessee, United States",
+    dedicated: "2000, May, 21",
+    area: 10700,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/nashville-tennessee-temple/nashville-tennessee-temple-38227-main.jpg"
   },
   {
-    templeName: "Mexico City Mexico",
-    location: "Mexico City, Mexico",
-    dedicated: "1983, December, 2",
-    area: 116642,
+    templeName: "Houston Texas",
+    location: "Klein, Texas, United States",
+    dedicated: "2000, August, 26",
+    area: 33970,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/houston-texas-temple/houston-texas-temple-23480-main.jpg"
   },
   {
-    templeName: "Mexico City Mexico",
-    location: "Mexico City, Mexico",
-    dedicated: "1983, December, 2",
-    area: 116642,
+    templeName: "Oakland California",
+    location: "Oakland, California, United States",
+    dedicated: "1964, November, 17",
+    area: 80157,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/oakland-california-temple/oakland-california-temple-2654-main.jpg"
+  },
+  {
+    templeName: "Hong Kong China",
+    location: "Kowloon Tong, Hong Kong, China ",
+    dedicated: "2022, June, 19",
+    area: 51921,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-28125-main.jpg"
+  },
+  {
+    templeName: "Nauvoo Illinois",
+    location: "Nauvoo, Illinois, United States",
+    dedicated: "2002, May, 6",
+    area: 54000,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-illinois-temple/nauvoo-illinois-temple-50576-main.jpg"
   }
 ]
 function displayTemples(filter = "Home"){
