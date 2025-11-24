@@ -11,5 +11,4 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         console.error("Menu error");
     }
-    displayTemples("Home");
 });

@@ -1,0 +1,27 @@
+@media (min-width:640px){
+    /*nav*/
+    #menu-toggle{
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap:1.5rem;
+    }
+    
+    .navigation a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    }
+
+    
+    .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: clamp(1rem, 3vw, 2rem); /*dynamically adjust*/
+    row-gap: clamp(1rem, 3vw, 2rem); /*dynamically adjust*/
+    padding: 1rem;
+    }
+}
