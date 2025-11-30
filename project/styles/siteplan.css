@@ -1,0 +1,83 @@
+/*for siteplan */
+:root {
+  --primary-bg-color:rgb(109,104,117) ; /* global scope */
+  --secondary-bg-color: rgb(181, 131, 141);
+  --third-bg-color: rgb(229,152,155);
+  --fourth-bg-color: rgb(255,180,162);
+  --fifth-bg-color: rgb(255,205,178);
+  --text-color: black;
+  --link-color: white;
+    
+}
+body {
+    margin: 0; 
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--third-bg-color);
+}
+header {
+    background: var(--primary-bg-color);
+    color: white;
+}
+h1{
+    font-weight: 600;
+    text-align: center;
+}
+/*nav */
+nav {
+    display: flex;
+    place-content: end;
+    gap: 1rem;
+}
+#menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    padding:0.25rem 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+.navigation { /*nav display off for default mobile first*/
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+}
+ .navigation li {
+    padding: 10px;
+}
+/*hamburger toggling open*/
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:0.5rem;
+}
+.navigation.open a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.navigation a:hover {
+    background: var(--secondary-bg-color);
+}
+main {
+    background: var(--fourth-bg-color);
+    margin: 0 auto;
+    max-height: fit-content;
+    max-width: 90%;/*this is simply creating white space in the large veiw*/
+} 
+section{
+    background-color: var(--fifth-bg-color);
+}
+img{
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+}
+footer {
+    background: var(--primary-bg-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}

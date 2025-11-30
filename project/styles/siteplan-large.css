@@ -1,0 +1,24 @@
+@media (min-width:640px){
+    /*nav*/
+    #menu-toggle{
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+    }
+    .navigation a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    }
+
+   .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 3rem;
+    } 
+}
