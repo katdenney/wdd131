@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Katlin Denney - Project Site Plan</title>
+    <link rel="icon" href="images/nail-polish-light-skin-tone.svg" type="image/x-icon">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Katlin Denney - site plan ">
+    <meta name="author" content="Katlin Denney">
+    <link rel="stylesheet" type="text/css" href="styles/siteplan.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/siteplan-large.css">      
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<header>
+    <h1>Product Review Form</h1>
+</header>
+<body>
+    <main>
+        <section class="form">
+            <form action="review.html" method="get">
+                <!--Product Name-->
+                <label for="productName" name="productName" required></label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                    <!--JS-->
+                </select>
+                <!--Overall Rating Stars-->
+                <fieldset>
+                    <legend>Overall Rating</legend>
+                    <div class="stars">
+                        <input type="radio" id="fivestar" name="rating" value="5" required>
+                        <label for="fivestar" title="5 stars"></label>
+
+                        <input type="radio" id="fourstar" name="rating" value="4" required>
+                        <label for="fourstar" title="4 stars"></label>
+
+                        <input type="radio" id="threestar" name="rating" value="3" required>
+                        <label for="threestar" title="3 stars"></label>
+
+                        <input type="radio" id="twostar" name="rating" value="2" required>
+                        <label for="twostar" title="2 stars"></label>
+
+                        <input type="radio" id="onestar" name="rating" value="1" required>
+                        <label for="onestar" title="1 star"></label>
+                    </div>
+                </fieldset>
+                <!--Date of Installation-->
+                <label for="installed">Date of Installation</label>
+                <input type="date" id="installed" name="installed" required>
+
+                <label for="reviewText">Write your review: (optional)</label>
+
+            </form>
+        </section>
+            
+
+    </main>
+</body>
+<footer>
+    <p></p>
+</html>
