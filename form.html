@@ -3,64 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Katlin Denney - Project Site Plan</title>
-    <link rel="icon" href="images/nail-polish-light-skin-tone.svg" type="image/x-icon">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Katlin Denney - site plan ">
+    <title>WDD 131 - Dynamic Web Fundamentals - Katlin Denney - Product Review Form</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Katlin Denney - product review form ">
     <meta name="author" content="Katlin Denney">
-    <link rel="stylesheet" type="text/css" href="styles/siteplan.css"> 
-    <link rel="stylesheet" type="text/css" href="styles/siteplan-large.css">      
+    <link rel="stylesheet" type="text/css" href="styles/product-form.css">       
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<header>
-    <h1>Product Review Form</h1>
-</header>
 <body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
     <main>
-        <section class="form">
-            <form action="review.html" method="get">
-                <!--Product Name-->
-                <label for="productName" name="productName" required></label>
-                <select id="productName" name="productName" required>
-                    <option value="" disabled selected>Select a Product...</option>
-                    <!--JS-->
-                </select>
-                <!--Overall Rating Stars-->
-                <fieldset>
-                    <legend>Overall Rating</legend>
-                    <div class="stars">
-                        <input type="radio" id="fivestar" name="rating" value="5" required>
-                        <label for="fivestar" title="5 stars"></label>
+    <section class="form-container">
+    <form action="review.html" method="get">
+        <!--Product Name-->
+        <label for="productName" name="productName" required></label>
+        <select id="productName" name="productName" required>
+            <option value="" disabled selected>Choose a Product...</option>
+            <!--JS-->
+        </select>
+        <!--Overall Rating Stars-->
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="rating" value="5" required>
+                <label for="fivestar" title="5 stars"></label>
 
-                        <input type="radio" id="fourstar" name="rating" value="4" required>
-                        <label for="fourstar" title="4 stars"></label>
+                <input type="radio" id="fourstar" name="rating" value="4" required>
+                <label for="fourstar" title="4 stars"></label>
 
-                        <input type="radio" id="threestar" name="rating" value="3" required>
-                        <label for="threestar" title="3 stars"></label>
+                <input type="radio" id="threestar" name="rating" value="3" required>
+                <label for="threestar" title="3 stars"></label>
 
-                        <input type="radio" id="twostar" name="rating" value="2" required>
-                        <label for="twostar" title="2 stars"></label>
+                <input type="radio" id="twostar" name="rating" value="2" required>
+                <label for="twostar" title="2 stars"></label>
 
-                        <input type="radio" id="onestar" name="rating" value="1" required>
-                        <label for="onestar" title="1 star"></label>
-                    </div>
-                </fieldset>
-                <!--Date of Installation-->
-                <label for="installed">Date of Installation</label>
-                <input type="date" id="installed" name="installed" required>
-                <!--Useful Features-->
-                <!--Written review-->
-                <label for="reviewText">Write your review: (optional)</label>
-                <!--User Name-->
-            </form>
-        </section>
-            
+                <input type="radio" id="onestar" name="rating" value="1" required>
+                <label for="onestar" title="1 star"></label>
+            </div>
+        </fieldset>
+        <!--Date of Installation-->
+        <label for="installed">Date of Installation</label>
+        <input type="date" id="installed" name="installed" required>
+        <!--Useful Features-->
+        <fieldset>
+            <legend> Which features did you find useful in the product? (Check all that apply)</legend>
+            <div class="checkbox">
+                <label><input type="checkbox" id="feature1" name="features" value="Durability">Durability</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Ease of Use">Ease of Use</label>
+                <label><input type="checkbox" id="feature3" name="features" value="Performance">Performance</label>
+                <label><input type="checkbox" id="feature4" name="features" value="Design">Design</label>
+            </div>
+        </fieldset>
+        <!--Written review-->
+        <label for="reviewText">Write your review: (optional)</label>
+        <textarea id="reviewText" name="reviewText" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+        <!--User Name-->
+        <label for="userName"> Your Name (Optional)</label>
+        <input type="text" id="userName" name="userName">
+        <!--Submit Button-->
+        <input type="submit" value="Submit Review">
 
+    </form>
+    </section>
     </main>
 </body>
 <footer>
-    <p></p>
+    <p>&copy;<span id="year"></span> Katlin Denney,WDD131, Utah</p>
+    <p>Current Date: <span id="date"></span>Last Modified: <span id="lastModified"></span></p>
 </html>

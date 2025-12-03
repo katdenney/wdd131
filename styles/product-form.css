@@ -1,0 +1,93 @@
+/*for siteplan */
+:root {
+  --primary-bg-color:rgb(109,104,117) ; /* global scope */
+  --secondary-bg-color: rgb(181, 131, 141);
+  --third-bg-color: rgb(229,152,155);
+  --fourth-bg-color: rgb(255,180,162);
+  --fifth-bg-color: rgb(255,205,178);
+  --text-color: black;
+  --link-color: white;
+    
+}
+body {
+    margin: 0; 
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--third-bg-color);
+}
+header {
+    background: var(--primary-bg-color);
+    color: var(--link-color);
+}
+h1{
+    text-align: center;
+    padding-left: 4rem;   
+}
+main{
+    background: var(--fourth-bg-color);
+    margin: 0 auto;
+    max-height: fit-content;
+    align-items: center;
+} 
+footer {
+background: var(--primary-bg-color);
+color: var(--link-color);
+text-align: center;
+padding: 1rem 0;
+}
+
+.form-container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--fifth-bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-sizing: border-box;  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+}
+.form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    white-space: nowrap;/* stop the name label from wrpping*/
+}
+form input, form select, form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--primary-bg-color);
+    box-sizing: border-box;
+}
+.stars label::before {
+    content: "☆";        /* the star */
+    font-size: 2rem;
+    color: rgb(248, 219, 54);
+    cursor: pointer;
+}
+.stars input:checked ~ label::before {
+    content: "★";
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 1rem;
+    }
+    legend, label {
+        white-space: normal;;
+    }
+}
