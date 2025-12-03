@@ -14,13 +14,11 @@ body {
     font-family: "Open Sans", sans-serif;
     background-color: var(--third-bg-color);
 }
-header {
-    background: var(--primary-bg-color);
-    color: var(--link-color);
-}
 h1{
+    background: var(--primary-bg-color);
     text-align: center;
-    padding-left: 4rem;   
+    padding-left: 4rem;
+    color: var(--link-color);   
 }
 main{
     background: var(--fourth-bg-color);
@@ -85,11 +83,13 @@ form input, form select, form textarea {
 .checkbox {
     display: flex;
     flex-direction: column;
+    
 }
 .checkbox label {
     display: flex;
     align-items: center;
-    gap:0.5rem;
+    gap:1rem;
+    padding-bottom: 1.5rem;
 }
 .checkbox input {
     width: 18px;
@@ -100,6 +100,6 @@ form input, form select, form textarea {
         padding: 1rem;
     }
     legend, label {
-        white-space: normal;;
+        white-space: normal;
     }
 }

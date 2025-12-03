@@ -14,14 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Product Review Form</h1>
-    </header>
     <main>
     <section class="form-container">
+        <h1>Product Review Form</h1>
     <form action="review.html" method="get">
         <!--Product Name-->
-        <label for="productName" name="productName" required>Select a Product</label>
+        <label for="productName">Select a Product</label>
         <select id="productName" name="productName" required>
             <option value="" disabled selected>Choose a Product...</option>
             <!--JS-->
@@ -52,7 +50,7 @@
         <!--Useful Features-->
         <fieldset>
             <legend> Which features did you find useful in the product? (Check all that apply)</legend>
-            <div class="checkbox-group">
+            <div class="checkbox">
             <input type="checkbox" id="feature1" name="features" value="Durability">
             <label for="feature1">Durability</label>
 
