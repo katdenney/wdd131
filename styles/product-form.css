@@ -82,7 +82,19 @@ form input, form select, form textarea {
 .stars input:checked ~ label::before {
     content: "★";
 }
-
+.checkbox {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox label {
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+.checkbox input {
+    width: 18px;
+    height: 18px;
+}
 @media (max-width: 480px) {
     form {
         padding: 1rem;
