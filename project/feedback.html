@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Katlin Denney - Feedback Form</title>
+    <link rel="icon" href="images/nail-polish.svg" type="image/x-icon">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Katlin Denney - feedback form ">
+    <meta name="author" content="Katlin Denney">
+    <link rel="stylesheet" type="text/css" href="styles/feedback-form.css">       
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> Welcome to the NAILS TO YOU Feedback Form
+        <nav class="navbar">
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul id="menu" class="navigation">
+                <li><a href="project/feedback.html">Feedback</a></li>
+                <li><a href="project/contact.html">Contact</a></li>
+                <li><a href="project/booking.html">Booking</a></li>
+                <li><a href="">Website</a></li>
+                <li><a href="">Website</a></li>
+                <li><a href="">Website</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="form-container">
+        <h1>Give Us A Review</h1>
+    <form action="review.html" method="get">
+        <!--Product Name-->
+        <label for="serviceName">Service Name</label>
+        <select id="serviceName" name="serviceName" required>
+            <option value="" disabled selected>Select a Service...</option>
+            <!--JS-->
+        </select>
+        <!--Overall Rating Stars-->
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="rating" value="5" required>
+                <label for="fivestar" title="5 stars"></label>
+
+                <input type="radio" id="fourstar" name="rating" value="4" required>
+                <label for="fourstar" title="4 stars"></label>
+
+                <input type="radio" id="threestar" name="rating" value="3" required>
+                <label for="threestar" title="3 stars"></label>
+
+                <input type="radio" id="twostar" name="rating" value="2" required>
+                <label for="twostar" title="2 stars"></label>
+
+                <input type="radio" id="onestar" name="rating" value="1" required>
+                <label for="onestar" title="1 star"></label>
+            </div>
+        </fieldset>
+        <!--Date of Service-->
+        <label for="installed">Date of Service</label>
+        <input type="date" id="installed" name="installed" required>
+        <!--Useful Features-->
+        <fieldset>
+            <legend> Which elements did you feel went well in your service? (Check all that apply)</legend>
+            <div class="checkbox">
+            <input type="checkbox" id="feature1" name="features" value="Speed of Service">
+            <label for="feature1">Speed of Service</label>
+
+            <input type="checkbox" id="feature2" name="features" value="Professionalism">
+            <label for="feature2">Professionalism</label>
+
+            <input type="checkbox" id="feature3" name="features" value="Product Quality">
+            <label for="feature3">Product Quality</label>
+
+            <input type="checkbox" id="feature4" name="features" value="Comfortable Experience">
+            <label for="feature4">Comfortable Experience</label>
+            </div>
+        </fieldset>
+        <!--Written review-->
+        <label for="reviewText">Write your review: (optional)</label>
+        <textarea id="reviewText" name="reviewText" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+        <!--User Name-->
+        <label for="userName"> Your Name (Optional)</label>
+        <input type="text" id="userName" name="userName">
+        <!--Submit Button-->
+        <input type="submit" value="Send Us Your Review">
+
+    </form>
+    </section>
+    </main>
+    <footer>
+    <p>&copy;<span id="year"></span> Katlin Denney,WDD131, Utah</p>
+    <p>Current Date: <span id="date"></span>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
