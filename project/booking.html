@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Katlin Denney - Contact</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Katlin Denney - Booking</title>
     <link rel="icon" href="images/nail-polish.svg" type="image/x-icon">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Katlin Denney - Contact Page ">
     <meta name="author" content="Katlin Denney">
+
+    <meta property="og:title" content="Nails To You Booking webpage">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://katdenney.github.io/wdd131/project/booking.html"> <!-- URL of the page -->
+
+    <link rel="stylesheet" type="text/css" href="styles/feedback-form.css"> 
     <link rel="stylesheet" type="text/css" href="styles/siteplan.css"> 
     <link rel="stylesheet" type="text/css" href="styles/siteplan-large.css"> 
+    
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/form.js" defer></script>
     <script src="scripts/nav.js" defer></script>
@@ -18,25 +25,42 @@
 </head>
 <body>
     <header>
-        <h1> Contact </h1>   
+        <h1> Booking </h1>   
         <nav class="navbar">
             <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
             <ul id="menu" class="navigation">
                 <li><a href="project/booking.html">Booking</a></li>
                 <li><a href="project/contact.html">Contact</a></li>
                 <li><a href="project/feedback.html">Feedback</a></li>
-                <li><a href="">Website</a></li>
-                <li><a href="">Website</a></li>
+                <li><a href="project/index.html">Home</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions or would like to book an appointment, please contact us at:</p>
-            <ul>
-                <li>Phone: (123) 456-7890</li>
-                <li>Email:
+        <section class="form-container">
+            <h2>Book an Appointment</h2>
+            <p>To book an appointment, please fill out the form below with your details and preferred service. We will get back to you to confirm your appointment.</p>
+            <form action="confirmation.html" method="get">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a Service...</option>
+                    <!--JS-->
+                </select>
+
+                <label for="appointmentDate">Preferred Appointment Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                <input type="submit" value="Book Appointment">
+            </form>
         </section>
 
     </main>
@@ -44,6 +68,13 @@
         <p>&copy;<span id="year"></span> Katlin Denney, Utah</p>
         <p>Current Date: <span id="date"></span>Last Modified: <span id="lastModified"></span></p>
         <p>WDD 131 - Dynamic Web Fundamentals, sorces: photos free from Unsplash, Icons free from bootstrap</p>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="images/instagram.svg" alt="Instagram icon" loading="lazy">
+        </a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <!--*Future reminder* _blank so it opens in a new tab not my website tab noopener noreferrer best practices for security and privacy -->
+            <img src="images/facebook.svg" alt="Facebook icon" loading="lazy">
+        </a>
     </footer>
     
 </body>

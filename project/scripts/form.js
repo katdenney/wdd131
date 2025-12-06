@@ -1,28 +1,23 @@
 const services = [
   {
     id: "em01",
-    name: "Express Manicure",
-    averagerating: 4.5
+    name: "Express Manicure"
   },
   {
     id: "cm02",
-    name: "Classic Manicure",
-    averagerating: 4.7
+    name: "Classic Manicure"
   },
   {
     id: "gm03",
-    name: "Gel Manicure",
-    averagerating: 3.5
+    name: "Gel Manicure"
   },
   {
     id: "an04",
-    name: "Acrylic Nails",
-    averagerating: 3.9
+    name: "Acrylic Nails"
   },
   {
     id: "pd05",
-    name: "Pedicure",
-    averagerating: 5.0
+    name: "Pedicure"
   }
 ];
 const select = document.querySelector("#serviceName");

@@ -7,24 +7,34 @@
     <link rel="icon" href="images/nail-polish.svg" type="image/x-icon">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Katlin Denney - feedback form ">
     <meta name="author" content="Katlin Denney">
-    <link rel="stylesheet" type="text/css" href="styles/feedback-form.css">       
+
+    <meta property="og:title" content="Nails To You Feedback webpage">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://katdenney.github.io/wdd131/project/feedback.html"> <!-- URL of the page -->
+
+    <link rel="stylesheet" type="text/css" href="styles/feedback-form.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/siteplan.css">
+    <link rel="stylesheet" type="text/css" href="styles/siteplan-large.css"> 
+          
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> Welcome to the NAILS TO YOU Feedback Form
+    <link rel="preload" as="image" href="images/herosaratoga.avif">
+    <link rel="preload" as="image" href="images/logo.avif">
+    <header> 
+        <h1>Welcome to the NAILS TO YOU Feedback Form</h1>
         <nav class="navbar">
             <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
             <ul id="menu" class="navigation">
                 <li><a href="project/feedback.html">Feedback</a></li>
                 <li><a href="project/contact.html">Contact</a></li>
                 <li><a href="project/booking.html">Booking</a></li>
-                <li><a href="">Website</a></li>
-                <li><a href="">Website</a></li>
-                <li><a href="">Website</a></li>
+                <li><a href="project/index.html">Home</a></li>
             </ul>
         </nav>
     </header>
@@ -91,8 +101,15 @@
     </section>
     </main>
     <footer>
-    <p>&copy;<span id="year"></span> Katlin Denney,WDD131, Utah</p>
-    <p>Current Date: <span id="date"></span>Last Modified: <span id="lastModified"></span></p>
+        <p>&copy;<span id="year"></span> Katlin Denney,WDD131, Utah</p>
+        <p>Current Date: <span id="date"></span>Last Modified: <span id="lastModified"></span></p>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <!--*Future reminder* _blank so it opens in a new tab not my website tab noopener noreferrer best practices for security and privacy -->
+            <img src="images/instagram.svg" alt="Instagram icon" loading="lazy">
+        </a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="images/facebook.svg" alt="Facebook icon" loading="lazy">
+        </a>
     </footer>
 </body>
 
