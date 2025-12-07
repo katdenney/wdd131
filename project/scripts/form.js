@@ -6,13 +6,17 @@ const services = [// go back and have this load from JSON file later
   {id: "pd05",name: "Pedicure"}
 ];
 // populate both dropdowns for feedback and booking forms 
-const selects = document.querySelectorAll("#service, #serviceName");
+function populateServiceOptions() {
+  const dropdowns = document.querySelectorAll("#service, #serviceName");
+  if (!dropdowns.length) return;
 
-services.forEach((select) => {
-  selects.forEach(service => {
-    const option = document.createElement("option");
-    option.value = service.name; // store name not id
-    option.textContent = service.name;
-    select.appendChild(option);
+  dropdowns.forEach((dropdown) => {
+    services.forEach(service => {
+      const option = document.createElement("option");
+      option.value = service.name; // store name not id
+      option.textContent = `${service.name}`;
+      dropdown.appendChild(option);
+    });
   });
-});
+}
+document.addEventListener("DOMContentLoaded",populateServiceOptions);
