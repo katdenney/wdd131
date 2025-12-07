@@ -9,70 +9,6 @@
   --link-color: white;
     
 }
-/*nav */
-nav {
-    display: flex;
-    place-content: end;
-    gap: 1rem;
-}
-#menu-toggle {
-    display: block;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    padding:0.25rem 0.5rem;
-    cursor: pointer;
-    color: white;
-}
-.navigation { /*nav display off for default mobile first*/
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;   
-}
- .navigation li {
-    padding: 10px;
-}
-/*hamburger toggling open*/
-.navigation.open {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap:0.5rem;
-}
-.navigation.open a {
-    display: block;
-    text-decoration: none;
-    color: white;
-}
-.navigation a:hover {
-    background: rgb(96, 108, 56);
-}
-/*end of nav*/
-body {
-    margin: 0; 
-    font-family: "Open Sans", sans-serif;
-    background-color: var(--third-bg-color);
-}
-h1{
-    background: var(--primary-bg-color);
-    text-align: center;
-    padding-left: 4rem;
-    color: var(--link-color);   
-}
-main{
-    background: var(--fourth-bg-color);
-    margin: 0 auto;
-    max-height: fit-content;
-    align-items: center;
-} 
-footer {
-background: var(--primary-bg-color);
-color: var(--link-color);
-text-align: center;
-padding: 1rem 0;
-}
-
 .form-container{
     width: 100%;
     max-width: 600px;
@@ -87,6 +23,7 @@ form{
     flex-direction: column;
     gap: 1.5rem;
     max-width: 600px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 .form label {
     display: block;
@@ -123,7 +60,6 @@ form input, form select, form textarea {
 .checkbox {
     display: flex;
     flex-direction: column;
-    
 }
 .checkbox label {
     display: flex;
