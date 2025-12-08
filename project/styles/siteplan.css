@@ -170,47 +170,58 @@ footer {
 .services{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px auto 1fr 50px;
+    grid-template-rows: 50px auto 1fr 1fr 50px;
     column-gap: 20px;
     row-gap: 10px;
 }
+/*the services header*/
 .services h2{
+    grid-column: 1 / span 4;
     grid-row: 1;
-    grid-column: 1 / span 2;
     justify-self: center;
 }
-.services .hands,.feet{
-    grid-row: 2;
-    display: grid;
+.services .hands-img{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
     justify-self: center;
+    align-items: center;
     list-style: square;
-    
+}
+.hands{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    justify-items: center;
+    align-items: center;
+}
+.services .feet-img{
+    grid-column: 2 / span 2;
+    grid-row: 2/ span 1;
+    justify-self: center;
+    align-items: center;
+    list-style: square;
+}
+.feet{
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    justify-items: center;
+    align-items: center;
 }
 .services img{
     width: 200px;
     height: auto;
 }
-.hands{
-    grid-column: 1 / span 1;
-    justify-items: center;
-    align-items: center;
-}
-.feet{
-    grid-column: 2 / span 1;
-    justify-items: center;
-    align-items: center;
-}
 .feet li{
     margin: 0;
 }
 .add-on{
-    grid-row: 3;
+    grid-column: 1 / span 4;
+    grid-row: 4/ span 1;
     justify-items: center;
-    grid-column: 1 / span 2;
 }
 .services p{
-    grid-row: 4;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
+    grid-row: 5/ span 1;
+    
     justify-self: center;
     align-self: end;
 }
