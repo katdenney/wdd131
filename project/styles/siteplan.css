@@ -89,7 +89,6 @@ header .navbar {
     text-shadow: var(--text-shadow);
     font-style: italic;
     font-weight: 700;
-    text-decoration: nonep;
 }
 /*nav */
 nav {
