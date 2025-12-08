@@ -179,7 +179,7 @@ footer {
     grid-column: 1 / span 2;
     justify-self: center;
 }
-.services div{
+.services .hands,.feet{
     grid-row: 2;
     display: grid;
     justify-self: center;
@@ -203,7 +203,7 @@ footer {
 .feet li{
     margin: 0;
 }
-.services ul{
+.add-on{
     grid-row: 3;
     justify-items: center;
     grid-column: 1 / span 2;
