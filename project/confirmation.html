@@ -24,9 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <link rel="preload" as="image" href="images/background-med.webp">
+    <link rel="preload" as="image" href="images/nail-logo.webp">
     <header>
         <h1> Your Booking Confirmation</h1>  
-        <img class="logo" src="images/nail-logo.png" loading="lazy" alt="Nails To You Logo"> 
+        <img class="logo" src="images/nail-logo.webp" loading="lazy" alt="Nails To You Logo"> 
         <nav class="navbar">
             <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
             <ul id="menu" class="navigation">
@@ -39,7 +41,7 @@
     </header>
     <div class="hero-container">
             <div class="hero">
-            <img src="images/background.webp" loading="lazy" alt="abstract pink background">
+            <img src="images/background-med.webp" loading="lazy" alt="abstract pink background">
             <p class="hero-text">Let's do your nails!</p>
             <a href="booking.html" class="btn">Book Now</a>
             </div>
